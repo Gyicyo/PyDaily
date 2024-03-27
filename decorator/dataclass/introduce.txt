@@ -1,0 +1,9 @@
+dataclass是python自带的一个装饰器，该装饰器是为了更方便地创建和使用数据类
+
+导入：from dataclasses import dataclass
+
+
+使用dataclass无需创建init方法，自带这个方法
+print（className）会直接输出该类实例的所有字段及其值而无需自定义str、repr方法
+
+自动创建__eq__和__hash__方法，支持相等性比较和作为字典键
