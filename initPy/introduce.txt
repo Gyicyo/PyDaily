@@ -1,0 +1,2 @@
+在python中，__init__.py类似java中的package
+将init文件放入python一个目录中，导入所需内容，即可在其他目录下更方便的引用
