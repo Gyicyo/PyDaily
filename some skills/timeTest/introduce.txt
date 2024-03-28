@@ -1,0 +1,3 @@
+使用python自带的timeit模块来进行算法的时间测试
+当然，timeit仅仅是时间测试，需要空间测试的话还需要其他模块
+也可以使用VS studio的Python Resource Monitor插件进行调试测试空间占用
