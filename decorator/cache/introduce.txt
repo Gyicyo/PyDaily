@@ -1,3 +1,5 @@
 python内置的functools 模块包含了两个缓存装饰器：cache、lru_cache
  通过缓存已有输入直接返回输出避免多次执行，从而大大减少运行时间
 相较cache，lru_cache功能更加强大
+但是似乎不对数组这种不能作为哈希表的键的类型参数起作用
+（有一个cachetools库似乎可以实现这个功能）
