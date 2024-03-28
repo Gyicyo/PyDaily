@@ -1,0 +1,2 @@
+自动生成验证码的库
+pip install captcha
