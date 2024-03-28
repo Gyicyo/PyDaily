@@ -1,0 +1,4 @@
+使用vsCode创建python项目并不像pyCharm那样可以自动完成虚拟环境配置，需要使用命令行手动配置
+
+python -m venv venv   (第二个venv是虚拟环境的文件名，一般为venv)
+其中包含了pip等python环境
