@@ -10,7 +10,7 @@ class Infix:
     def __init__(self, function:Callable): #初始化方法
         self.function = function
 
-    def __ror__(self, other: Any) -> Self: #infix在 | 的右侧
+    def __ror__(self, other: Any) -> Self: #infix在 | 的右侧（这里使用了python3.9没有的typing.Self,在3.9版本可以写成'Infix'(类型注解)）
         return Infix(lambda var: self.function(other,var))
 
     def __or__(self, other: Any) -> Any: #infix在 | 的左侧
