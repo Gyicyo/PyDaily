@@ -1,0 +1,1 @@
+使用python自带的logging模块生成日志文件，相比print调试功能更加强大
