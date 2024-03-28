@@ -1,0 +1,3 @@
+使用functools中的singledispatch装饰器使一个方法能够添加分支方法，实现重载功能
+
+（此外：typing模块中提供了override装饰器用于类方法的重写）
