@@ -1,0 +1,3 @@
+介绍了python3.12 itertools模块的新类型：batched
+batch是批处理方法
+可以用于异步请求、机器学习的批次处理
