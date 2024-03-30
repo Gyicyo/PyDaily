@@ -1,0 +1,11 @@
+reduce是python自带模块functools中的一个方法
+
+reduce方法上传两个参数，一个是function（x,y），用于处理可迭代对象，第二个是一个可迭代对象，接受这个方法的处理
+
+举例：
+方法为：x,y : x*y
+list = [a,b,c,d]
+第一轮：x = a, y = b
+第二轮：x = a*b, y = c
+第三轮：x = a*b*c, y = d
+结束。返回x的值（即a*b*c*d）
