@@ -10,15 +10,19 @@ path = os.getcwd()
 sys.path.append(os.path.join(path,'venv'))
 sys.path.append(os.path.join(path,'venv\\Lib\\site-packages'))
 
+NAME_SPACE = 40
+PID_SPACE = 20
+CREATE_TIME_SPACE = 40
+
 import time
 import psutil
 
 name = input('你想关掉什么进程:')
 print(f"开始寻找： {name}...")
 
-found_processes: list = [proc for proc in
+found_processes: set = {proc for proc in
                             psutil.process_iter(['pid','name','create_time'])
-                                if name in proc.info['name']]
+                                if name in proc.info['name']}
 
 processes_num = len(list(psutil.process_iter()))
 
@@ -26,12 +30,12 @@ if not found_processes:
     print(f"没有名字中含有“ {name} ”的进程被发现!")
 else:
     print('获取到目标进程:')
-    print('进程名'.center(20),'PID'.center(20),'创建时间'.center(40))
+    print('进程名'.center(NAME_SPACE),'PID'.center(PID_SPACE),'创建时间'.center(CREATE_TIME_SPACE))
     for proc in found_processes:
         name = proc.info['name']
         pid = f'{proc.info['pid']}'
         create_time = time.strftime("%H:%M:%S", time.localtime(proc.info['create_time']))
-        print(name.center(20),pid.center(20),create_time.center(40))
+        print(name.center(NAME_SPACE),pid.center(PID_SPACE),create_time.center(CREATE_TIME_SPACE))
 
     choice_pid = input("输入一个PID,关闭所有与该进程进程名相同的进程：")
     while True:
