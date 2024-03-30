@@ -1,0 +1,35 @@
+
+info:
+  version: 1.0.0
+  author: Gyi
+
+database:
+  string: |
+    This is a string
+    with | symbol.
+
+    hello。
+
+  string2: >
+    This is a string
+    with multiple lines.
+
+  map: &map_object
+    key1: value1
+    key2: value2
+    key3: value3
+
+  map2:
+    <<: *map_object
+    key3: value5
+    key4: value4
+
+  list: &list_object
+    - item1
+    - item2
+    - item3
+
+  list2:
+    - *list_object // 作为一个子list,而非引用
+    - item4
+    - item5

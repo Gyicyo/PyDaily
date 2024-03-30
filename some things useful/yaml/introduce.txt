@@ -1,0 +1,5 @@
+yaml和json一样是适合小规模数据存储的文件类型，编辑方式与json有些许不同
+在python中使用yaml文件需要导入pyyaml
+pip install pyyaml
+
+import yaml
