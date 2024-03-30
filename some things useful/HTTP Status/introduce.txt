@@ -1,0 +1,1 @@
+使用python内置的http包中的HTTPStatus，快速获取所有http请求的状态码，还包含描述
