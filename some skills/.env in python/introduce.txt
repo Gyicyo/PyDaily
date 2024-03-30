@@ -1,0 +1,6 @@
+在python中使用.env文件，将环境变量录入其中，方便修改使用，同时避免敏感信息泄露
+
+使用需要导入dotenv包
+pip install python-dotenv
+
+协作时上传记得把.env 文件的具体内容删去，只保留字段名
