@@ -1,0 +1,4 @@
+global和nonlocal都是python的保留关键字
+
+global x，获取全局变量x
+nonlocal y，用于嵌套函数中内层函数获取上一层函数的中变量y
