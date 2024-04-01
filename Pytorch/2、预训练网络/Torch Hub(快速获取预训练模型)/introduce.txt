@@ -1,0 +1,6 @@
+pytorch在1.0版本引入了Torch hub，，它是一种机制，通过该机制作者可以在GitHub上发布模型，无论是否预先训练过权重，都可以通过PyTorch可以理解的接口将其公开发布。这使得从第三方加载预训练的模型就像加载TorchVision模型一样简单。
+
+作者若要通过Torch Hub 机制发布模型，只需将一个名为hubconf.py的文件放在GitHub存
+储库的根目录下。该文件的结构非常简单。（见introduce.png）
+
+使用hub需要导入torch.hub模块，使用方式见(introduce2.png 、TorchHub.py)
