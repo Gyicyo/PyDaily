@@ -1,0 +1,4 @@
+resnet是一个图像识别网络，能1000种物品
+
+imagenet_classes.txt ： 可识别的物品集
+bobby.jpg : 实例要求识别的物品
