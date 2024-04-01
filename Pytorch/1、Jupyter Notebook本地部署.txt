@@ -1,0 +1,5 @@
+全局命令行下(方便启动)pip install jupyter notebook
+下载过程打开代理，会下载很多依赖
+
+安装完后命令行输入jupyter notebook启动
+默认访问地址：http://localhost:8888/tree（一般启动后就会打开）
