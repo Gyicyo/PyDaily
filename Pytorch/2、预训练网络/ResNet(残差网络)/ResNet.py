@@ -9,7 +9,7 @@ preprocess = transforms.Compose([ #定义图像预处理方式
     transforms.CenterCrop(224),
     transforms.ToTensor(),
     transforms.Normalize( #归一化
-        mean=[0.11, 0.11, 0.41], #均值
+        mean=[0.485,0.456,0.406], #均值
         std=[0.229, 0.224, 0.225]), #方差
 ])
 
