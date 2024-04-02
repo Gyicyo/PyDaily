@@ -1,0 +1,4 @@
+Tensor是Stroage的视图，Stroage是Tensor的真实存储模式
+
+Stroage可以有多个Tensor视图
+创建一个tensor，这个tensor的切片都将引用这个Stroage（可以通过获取偏移量的方式反映）（也因此，直接对tensor的切片进行修改，会直接影响Stroage从而影响原本的tensor，解决方法是clone开辟新的Stroage）
