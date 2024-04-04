@@ -1,0 +1,21 @@
+（这里以CUDA为例，AMD似乎需要额外操作）
+先看看电脑有没有GPU
+
+获取cuda版本：
+命令行：nvidia-smi
+右上角看版本
+
+去官网智能安装对应的torch和torchvision等（pip install torch装的是cpu版本的，要去官网找合适自己的版本，然后安装，若出现CUDA版本比pytorch目前支持的版本更高的情况，可以先试试安装最新版，若还不行，可以尝试降低CUDA版本）：
+https://pytorch.org/get-started/locally/
+
+下载完后检查是否可以使用gpu加速
+import torch
+print(torch.cuda.is_available())
+print(torch.__version__)
+
+将模型部署到GPU来启用GPU加速
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+model.to(device)
+--snip--
+inputs,target = inputs.to(device),target.to(device)
+--snip--
