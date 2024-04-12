@@ -1,0 +1,1 @@
+使用abs模块的abstractmethod装饰器实现
