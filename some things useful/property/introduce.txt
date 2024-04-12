@@ -1,0 +1,2 @@
+
+python中的getter和setter（主要对私有变量用）
