@@ -1,2 +1,3 @@
 
 python中的getter和setter（主要对私有变量用）
+这里同时也介绍了slot魔术方法，用于限制类变量
