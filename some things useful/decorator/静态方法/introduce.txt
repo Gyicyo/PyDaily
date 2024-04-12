@@ -1,0 +1,1 @@
+使用staticmethod来设置类静态方法
