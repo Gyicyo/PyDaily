@@ -1,0 +1,1 @@
+python版本为3.11.9(gensim还没有python12对应版本)
