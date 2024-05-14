@@ -1,1 +1,2 @@
 使用contextlib模块的contextmanager可以实现更加流畅舒适且规范易懂的上下文操作
+更广泛的，只要实现了__enter__和__exit__,就可以使用with as 语句
