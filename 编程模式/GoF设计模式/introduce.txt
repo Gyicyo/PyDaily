@@ -1,0 +1,4 @@
+GoF设计模式共计23条，3大类：创建型、结构型、行为型
+
+
+参考：https://github.com/qiualiang/gof
